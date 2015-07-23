@@ -1,0 +1,8 @@
+# Ignore sqlite3 database
+*.sqlite3
+
+# Ignore Python byte code
+*.pyc
+
+# Ignore Django secret_key
+web/secret_key.py
