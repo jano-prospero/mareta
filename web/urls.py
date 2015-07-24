@@ -16,6 +16,16 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 
+# Add the index request
+def index(request):
+    from django.shortcuts import render_to_response
+    from django.template import RequestContext
+
+    return render_to_response('base.html',
+                                context_instance=RequestContext(request),
+                            )
+
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^$', index, name='url_index'),
 ]
