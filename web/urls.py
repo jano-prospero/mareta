@@ -28,4 +28,7 @@ def index(request):
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', index, name='url_index'),
-]
+
+    #Apps urls
+    url(r'^incident_handling$', include('web.apps.incident_handling.urls')),
+    ]

@@ -51,6 +51,9 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    #mareta project apps
+    'web.apps.incident_handling',
 )
 
 MIDDLEWARE_CLASSES = (
